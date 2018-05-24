@@ -20,3 +20,9 @@ def index(request):
 
 def health(request):
     return HttpResponse(PageView.objects.count())
+
+def hello_world(request):
+    return HttpResponse("""
+                        <h1>Hello World!</h1>
+                        <p>This application is hosted on Openshift</p>
+                        """)
