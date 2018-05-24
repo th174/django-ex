@@ -25,4 +25,5 @@ def hello_world(request):
     return HttpResponse("""
                         <h1>Hello World!</h1>
                         <p>This application is hosted on Openshift</p>
+                        <p>This application is configured with a webhook to rebuild whenever the code changes on master.</p>
                         """)
